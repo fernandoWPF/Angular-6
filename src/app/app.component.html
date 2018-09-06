@@ -3,9 +3,5 @@
   <h1>
     Bem vindo {{ title }}!
   </h1>
-    <input type="text" [(ngModel)]="cliente">
-    <button type="button" (click)="addCliente()">Add Cliente</button>
-    <ul>
-      <li *ngFor="let item of clientes">{{item}}</li>
-    </ul>
 </div>
+<app-clientes></app-clientes>

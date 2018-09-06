@@ -7,11 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Projeto';
-  clientes = [];
-  cliente = "";
-
-  addCliente(){
-    this.clientes.push(this.cliente);
-  }
-
 }
