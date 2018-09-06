@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Cliente } from './cliente';
 
 @Component({
   selector: 'app-clientes',
@@ -8,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class ClientesComponent implements OnInit {
 
   clientes = [];
-  cliente = "";
+  cliente: Cliente ={
+    nome:"",
+    idade:0
+  }
 
   addCliente(){
-    this.clientes.push(this.cliente);
+    let cliente = Object.assign({},this.cliente );
+    this.clientes.push(cliente);
   }
 
   constructor() { }
